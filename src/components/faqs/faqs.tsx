@@ -18,7 +18,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
         <span className="text-lg font-medium">{question}</span>
         <Plus className={`transform transition-transform ${isOpen ? 'rotate-45' : ''}`} />
       </button>
-      {isOpen && <p className="mt-2 text-gray-600">{answer}</p>}
+      {isOpen && <p className="mt-2 text-left text-gray-600">{answer}</p>}
     </div>
   );
 };
@@ -30,9 +30,9 @@ interface FAQ {
 
 const FAQSection: React.FC = () => {
   const faqs: FAQ[] = [
-    { question: "What is Perfect3sixty?", answer: "Perfect3sixty is..." },
-    { question: "Is Perfect3sixty free to use?", answer: "Perfect3sixty offers..." },
-    { question: "What kind of support does Perfect3sixty offer?", answer: "Perfect3sixty provides..." },
+    { question: "What is Perfect3sixty?", answer: "Perfect3sixty streamlines salon operations, minimizes wait times, and delivers personalized beauty experiences." },
+    { question: "Is Perfect3sixty free to use?", answer: "Yes, Perfect3sixty is free to use for all users. Our core features, including Smart Booking, Real-time Updates, and Service Menu browsing, are available at no cost. We aim to make salon management and client experiences as accessible as possible. While the app is currently free, we plan to introduce optional subscription plans in the future that will offer additional premium features for those who want to enhance their experience further." },
+    { question: "What kind of support does Perfect3sixty offer?", answer: "Our salon app is your beauty bestie. No more stressing over appointments or wondering if your stylist is running late. Just chill and book your next treatment whenever it suits you. Plus, our menu is packed with options to help you look and feel your best. It's like having your own personal beauty assistant right at your fingertips." },
   ];
 
   return (
