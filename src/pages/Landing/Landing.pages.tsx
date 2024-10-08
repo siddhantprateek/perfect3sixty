@@ -101,7 +101,7 @@ const LandingPage = () => {
         <motion.div 
           className="mt-20 mb-20 bottom-0 left-0 right-0 flex justify-center space-x-8 pb-8"
         >
-          {['Bogo', 'Appsumo', 'Producthunt', 'Lifetime', 'Dealify', 'Stacksocial'].map((brand, index) => (
+          {/* {['Bogo', 'Appsumo', 'Producthunt', 'Lifetime', 'Dealify', 'Stacksocial'].map((brand, index) => (
             <motion.div 
               key={index} 
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ const LandingPage = () => {
             >
               {brand}
             </motion.div>
-          ))}
+          ))} */}
         </motion.div>
 
         {/* Features Section */}

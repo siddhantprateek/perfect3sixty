@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+// import { Star } from 'lucide-react';
 import { HERO1 } from '../../assets';
 
 const Hero = () => {
@@ -20,17 +20,19 @@ const Hero = () => {
         <button className="px-6 py-3 bg-white text-black border border-black rounded-full text-lg">Play Store</button>
       </div>
       <div className="flex justify-center items-center">
-        <div className="flex -space-x-2 mr-4">
+        {/* Rating will be added after the launch */}
+        {/* <div className="flex -space-x-2 mr-4">
           {[...Array(4)].map((_, i) => (
             <div key={i} className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"></div>
           ))}
-        </div>
-        <div className="flex items-center">
+        </div> */}
+        
+        {/* <div className="flex items-center">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="text-yellow-400" size={16} />
           ))}
           <span className="ml-1">4.8 (87k Reviews)</span>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
