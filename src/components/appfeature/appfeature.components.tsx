@@ -42,7 +42,7 @@ const features: Feature[] = [
 ];
 
 const AppFeatures = () => {
-  const [selectedFeature, setSelectedFeature] = useState<number>(1);
+  const [selectedFeature, setSelectedFeature] = useState<number>(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
 
   useEffect(() => {
