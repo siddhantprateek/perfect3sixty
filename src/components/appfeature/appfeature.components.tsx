@@ -35,7 +35,7 @@ const features: Feature[] = [
   {
     id: 4,
     title: "Never Miss your appointment",
-    description: "Recieve notifications so you never miss an appointment.",
+    description: "Receive notifications so you never miss an appointment.",
     icon: "🔔",
     image: FRAME5
   },
