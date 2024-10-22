@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronRight, Calendar, Clock, Scissors } from 'lucide-react';
 import { STOCK1, STOCK2, STOCK4 } from '../../assets';
-import { DownloadAppsSection, FAQs, Footer, Header, Hero } from '../../components';
+import { AppFeature, DownloadAppsSection, FAQs, Footer, Header, Hero } from '../../components';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 
 const FeaturesContent = [
@@ -45,7 +45,7 @@ const FeaturesContent = [
     icon: ChevronRight,
     image: '',
     dark: true,
-    description: "Receive expert suggestions based on your hair type, style history, and preferences. Our AI-driven recommendations help you discover new looks and treatments."
+    description: "Receive expert suggestions based on your hair type, style history, and preferences."
   }
 ];
 
@@ -114,6 +114,9 @@ const LandingPage = () => {
           ))} */}
         </motion.div>
 
+        {/* App Feature */}
+        <AppFeature />
+
         {/* Features Section */}
         <ScrollAnimatedSection className="py-16 bg-gray-100 rounded-xl">
           <motion.h2 
@@ -147,10 +150,14 @@ const LandingPage = () => {
           </div>
         </ScrollAnimatedSection>
 
+
+
         {/* For Apps */}
         <ScrollAnimatedSection>
           <DownloadAppsSection />
         </ScrollAnimatedSection>
+
+        
 
         
         {/* FAQs */}

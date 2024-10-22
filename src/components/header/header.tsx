@@ -55,7 +55,6 @@ const Header = () => {
 
         {/* Desktop buttons */}
         <div className="hidden md:flex space-x-4">
-          <button className="px-4 py-2 hover:bg-gray-100 rounded transition-colors">Sign up</button>
           <button 
             className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors"
             onClick={() => scrollToSection('downloadApps')}
