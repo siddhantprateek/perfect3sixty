@@ -84,14 +84,7 @@ const LandingPage = () => {
         className="container mx-auto px-4"
       >
         {/* Header */}
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Header />
-        </motion.div>
-
+        
         {/* Hero Section */}
         <ScrollAnimatedSection>
           <Hero />
@@ -170,13 +163,7 @@ const LandingPage = () => {
         </motion.div>
 
         {/* Footer */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Footer />
-        </motion.div>
+
       </motion.div>
     </AnimatePresence>
   );

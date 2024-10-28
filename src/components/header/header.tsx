@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import { useNavigate } from 'react-router-dom' 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   const scrollToSection = (sectionId: string): void => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="py-4 px-4 md:px-0">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-semibold">
+        <div className="text-2xl font-semibold" onClick={() => navigate("/")}>
           Perfect<span className='text-orange-500'>3Sixty</span>
         </div>
 
