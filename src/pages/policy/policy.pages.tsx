@@ -1,31 +1,31 @@
 import React from 'react';
 
-const certifications = [
-  {
-    id: 'soc2',
-    title: 'SOC 2 Type 2',
-    description: "We're SOC 2 Type 2 compliant.",
-    icon: 'SOC'
-  },
-  {
-    id: 'gdpr',
-    title: 'GDPR',
-    description: "We're GDPR compliant. Ask us for our DPA.",
-    icon: 'GDPR'
-  },
-  {
-    id: 'hipaa',
-    title: 'HIPAA',
-    description: "We're happy to sign a BAA in the enterprise plan.",
-    icon: 'HIPAA'
-  },
-  {
-    id: 'iso',
-    title: 'ISO 27001',
-    description: "We're ISO 27001 compliant.",
-    icon: 'ISO'
-  }
-];
+// const certifications = [
+//   {
+//     id: 'soc2',
+//     title: 'SOC 2 Type 2',
+//     description: "We're SOC 2 Type 2 compliant.",
+//     icon: 'SOC'
+//   },
+//   {
+//     id: 'gdpr',
+//     title: 'GDPR',
+//     description: "We're GDPR compliant. Ask us for our DPA.",
+//     icon: 'GDPR'
+//   },
+//   {
+//     id: 'hipaa',
+//     title: 'HIPAA',
+//     description: "We're happy to sign a BAA in the enterprise plan.",
+//     icon: 'HIPAA'
+//   },
+//   {
+//     id: 'iso',
+//     title: 'ISO 27001',
+//     description: "We're ISO 27001 compliant.",
+//     icon: 'ISO'
+//   }
+// ];
 
 const informationCollected = [
   {
@@ -94,21 +94,21 @@ const contactInfo = {
   address: ''
 };
 
-interface CertificationCardProps {
-  title: string;
-  description: string;
-  icon: string;
-}
+// interface CertificationCardProps {
+//   title: string;
+//   description: string;
+//   icon: string;
+// }
 
-const CertificationCard: React.FC<CertificationCardProps> = ({ title, description, icon }) => (
-  <div className="text-center">
-    <div className="w-24 h-24 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
-      <div className="w-16 h-16 text-blue-600">{icon}</div>
-    </div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
+// const CertificationCard: React.FC<CertificationCardProps> = ({ title, description, icon }) => (
+//   <div className="text-center">
+//     <div className="w-24 h-24 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
+//       <div className="w-16 h-16 text-blue-600">{icon}</div>
+//     </div>
+//     <h3 className="text-xl font-semibold mb-2">{title}</h3>
+//     <p className="text-gray-600">{description}</p>
+//   </div>
+// );
 
 const Policy = () => {
   return (

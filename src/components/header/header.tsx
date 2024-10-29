@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useNavigate } from 'react-router-dom' 
+import { useNavigate } from 'react-router-dom'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Header = () => {
   const navItems = [
     { label: 'Features', id: 'features' },
     { label: 'About', id: 'about' },
-    { label: 'FAQs', id: 'faqs' },
+    { label: 'FAQs', id: 'faqs' }
   ];
 
   return (
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
 
         {/* Mobile menu button */}
-        <button 
+        <button
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -39,7 +39,7 @@ const Header = () => {
             {navItems.map((item) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
+                  href={`/${item.id}`}
                   onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                     e.preventDefault();
                     scrollToSection(item.id);
@@ -50,12 +50,17 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a href="/policy">
+                Policy
+              </a>
+            </li>
           </ul>
         </nav>
 
         {/* Desktop buttons */}
         <div className="hidden md:flex space-x-4">
-          <button 
+          <button
             className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors"
             onClick={() => scrollToSection('downloadApps')}
           >
@@ -84,7 +89,7 @@ const Header = () => {
                 </li>
               ))}
               <li>
-                <button 
+                <button
                   className="w-full text-left py-2 px-4 hover:bg-gray-100 transition-colors"
                   onClick={() => {
                     // Handle sign up action
@@ -95,7 +100,7 @@ const Header = () => {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   className="w-full text-left py-2 px-4 bg-black text-white hover:bg-gray-800 transition-colors"
                   onClick={() => {
                     scrollToSection('downloadApps');

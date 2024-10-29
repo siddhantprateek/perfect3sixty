@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { LandingPage, Policy } from './pages';
 import { Footer, Header } from './components';
-import { motion, AnimatePresence, useInView } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
 function App() {
   return (

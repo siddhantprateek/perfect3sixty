@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronRight, Calendar, Clock, Scissors } from 'lucide-react';
 import { STOCK1, STOCK2, STOCK4 } from '../../assets';
-import { AppFeature, DownloadAppsSection, FAQs, Footer, Header, Hero } from '../../components';
+import { AppFeature, DownloadAppsSection, FAQs, Hero } from '../../components';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 
 const FeaturesContent = [
