@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { LandingPage, Policy } from './pages';
-import { RefundPolicy, TermsAndConditions, ContactInfo } from './pages/Legal/term.pages';
+import { AboutPage, ContactUs, LandingPage, PartnerWithUs, Policy } from './pages';
+import { RefundPolicy, TermsAndConditions } from './pages/Legal/term.pages';
 import { Footer, Header } from './components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Routes, Route } from 'react-router-dom';
@@ -11,19 +11,15 @@ function App() {
     <div className="App">
       <AnimatePresence>
 
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Header />
-        </motion.div>
+        <Header />
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/policy' element={<Policy />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/trust-securities' element={<Policy />} />
           <Route path='/terms' element={<TermsAndConditions/>} />
           <Route path='/refunds' element={<RefundPolicy/>} />
-          <Route path='/contact-us' element={<ContactInfo/>} />
+          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='/partner-with-us' element={<PartnerWithUs />} />
         </Routes>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

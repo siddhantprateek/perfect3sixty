@@ -8,3 +8,5 @@ export { default as FRAME2 } from './Frame2.png';
 export { default as FRAME3 } from './Frame3.png';
 export { default as FRAME4 } from './Frame4.png';
 export { default as FRAME5 } from './Frame5.png';
+export { default as HAIRSALONFT } from './hairsalonfooter.jpg';
+export { default as SALON } from './salon.jpg';
