@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { AboutPage, ContactUs, LandingPage, PartnerWithUs, Policy } from './pages';
+import { AboutPage, ContactUs, LandingPage, PartnerWithUs, Policy, PrivacyPolicy } from './pages';
 import { RefundPolicy, TermsAndConditions } from './pages/Legal/term.pages';
 import { Footer, Header } from './components';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -20,6 +20,7 @@ function App() {
           <Route path='/refunds' element={<RefundPolicy/>} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/partner-with-us' element={<PartnerWithUs />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

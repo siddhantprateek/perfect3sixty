@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Users, Sparkles, AlertCircle } from 'lucide-react';
+import { Shield, Users, Sparkles, AlertCircle, Mail } from 'lucide-react';
 
 const keyPoints = [
   {
@@ -73,7 +73,7 @@ const TermsAndConditions: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/10">
           <div className="max-w-6xl mx-auto px-4 h-full flex items-center">
-            <h1 className="text-5xl font-bold text-white">Terms & Conditions</h1>
+            <h1 className="text-5xl font-bold text-white">Trust & Securities</h1>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ const TermsAndConditions: React.FC = () => {
 
         {/* Main Terms Content */}
         <div className="space-y-12">
-          <p className="text-gray-600">Last Updated: 28th Oct, 2024</p>
+          <p className="text-gray-600">Last Updated: 2nd Nov, 2024</p>
 
           {termsContent.map((section, index) => (
             <div key={index} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
@@ -111,12 +111,17 @@ const TermsAndConditions: React.FC = () => {
           ))}
 
           {/* Contact Section */}
-          <div className="bg-gray-50 rounded-xl p-8 mt-8">
-            <h3 className="text-2xl font-bold mb-4">Questions?</h3>
-            <p className="text-gray-700">
+          <div className="bg-black text-white rounded-xl p-8">
+            <h2 className="text-2xl font-bold mb-4">Questions?</h2>
+            <p className="mb-4">
               If you have any questions about these Terms & Conditions, please contact us at:
             </p>
-            <p className="mt-2 text-blue-600">mail@perfect3sixty.com</p>
+            <div className="flex items-center space-x-2">
+              <Mail className="w-5 h-5" />
+              <a href="mailto:mail@perfect3sixty.com" className="text-orange-400 hover:text-orange-300">
+                mail@perfect3sixty.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

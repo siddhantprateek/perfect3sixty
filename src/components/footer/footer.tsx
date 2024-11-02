@@ -83,7 +83,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/trust-securities" className="hover:text-white transition-colors" onClick={scrollToTop}>
+                    <Link to="/privacy-policy" className="hover:text-white transition-colors" onClick={scrollToTop}>
                       Privacy Policy
                     </Link>
                   </li>
