@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
@@ -8,6 +8,7 @@ const Header = () => {
   const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,12 +41,35 @@ const Header = () => {
     { label: 'Contact Us', path: '/contact-us' }
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, item: { id: string, type: string }) => {
+  const handleNavClick = async (e: React.MouseEvent<HTMLAnchorElement>, item: { id: string, type: string }) => {
     e.preventDefault();
     if (item.type === 'route') {
       navigate(`/${item.id}`);
     } else {
-      scrollToSection(item.id);
+      // If we're not on the home page and trying to scroll to a section
+      if (location.pathname !== '/' && item.type === 'scroll') {
+        // First navigate to home page
+        await navigate('/');
+        // Wait for navigation to complete
+        setTimeout(() => {
+          scrollToSection(item.id);
+        }, 100);
+      } else {
+        // If we're already on home page, just scroll
+        scrollToSection(item.id);
+      }
+    }
+    setIsMenuOpen(false);
+  };
+
+  const handleGetApp = () => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        scrollToSection('downloadApps');
+      }, 100);
+    } else {
+      scrollToSection('downloadApps');
     }
     setIsMenuOpen(false);
   };
@@ -141,7 +165,7 @@ const Header = () => {
           <div className="hidden md:flex space-x-4">
             <button
               className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-              onClick={() => scrollToSection('downloadApps')}
+              onClick={handleGetApp}
             >
               Get App
             </button>
@@ -203,10 +227,7 @@ const Header = () => {
                   <li>
                     <button
                       className="w-full text-left py-2 px-4 bg-black text-white hover:bg-gray-800 transition-colors rounded-lg"
-                      onClick={() => {
-                        scrollToSection('downloadApps');
-                        setIsMenuOpen(false);
-                      }}
+                      onClick={handleGetApp}
                     >
                       Get App
                     </button>
