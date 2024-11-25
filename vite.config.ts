@@ -14,7 +14,7 @@ export default defineConfig({
       '/api': {
         target: 'https://agent.perfect3sixty.com',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       }
     }
   }
