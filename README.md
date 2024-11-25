@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+# Perfect3sixty: Revolutionize Your Salon Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Less wait. More style. Perfect3sixty is an innovative salon booking platform that transforms the way you manage your beauty appointments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="./assets/logo512.png" height="100"/>
 
-## Expanding the ESLint configuration
+🚀 Features:
+- Smart Booking: Effortless appointment scheduling, anytime, anywhere
+- Real-time Updates: Stay informed about your appointment status
+- Service Menu: Explore comprehensive beauty offerings
+- Personalized Recommendations: Get AI-driven style suggestions (_coming soon_)
+- Stylist Reels: Salon professionals can promote their work through engaging video content (_coming soon_)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+**Perfect3sixty** streamlines salon operations, minimizes wait times, and delivers personalized beauty experiences. Join us in reshaping the future of salon management and customer satisfaction.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![](./assets/thumbnail.png)
