@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FRAME5, FRAME2, FRAME3, FRAME4 } from '../../assets';
 

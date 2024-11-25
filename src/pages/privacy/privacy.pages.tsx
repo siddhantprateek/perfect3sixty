@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ScrollAnimatedSection } from '../../components';
 import { Lock, Eye, Share2, Mail } from 'lucide-react';

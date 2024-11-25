@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ScrollAnimatedSection } from '../../components';
 import { Sparkles, Users, TrendingUp, Clock, Shield, Award } from 'lucide-react';

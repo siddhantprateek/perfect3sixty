@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Send, Camera, Link2, Hand, ShoppingBasket, TrendingUp } from 'lucide-react';
 
 const ChatInterface = () => {

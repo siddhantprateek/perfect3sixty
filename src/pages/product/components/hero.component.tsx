@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Hand } from 'lucide-react';
 
 const Hero = () => {

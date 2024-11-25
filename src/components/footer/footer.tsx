@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Linkedin, Instagram, Twitter, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { HAIRSALONFT } from '../../assets';
