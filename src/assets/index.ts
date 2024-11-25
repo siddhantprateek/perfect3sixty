@@ -1,0 +1,14 @@
+export { default as STOCK1 } from './stock-image1.jpg';
+export { default as STOCK2 } from './stock-image2.jpg';
+export { default as STOCK3 } from './stock-image3.jpg';
+export { default as STOCK4 } from './stock-image4.jpg';
+export { default as HERO1 } from './hero-model2.png';
+export { default as FRAME1 } from './Frame1.png';
+export { default as FRAME2 } from './Frame2.png';
+export { default as FRAME3 } from './Frame3.png';
+export { default as FRAME4 } from './Frame4.png';
+export { default as FRAME5 } from './Frame5.png';
+export { default as HAIRSALONFT } from './hairsalonfooter.jpg';
+export { default as SALON } from './salon.png';
+export { default as ANDROID_APK } from './apk-qr.png';
+export { default as DISPLAY } from './image.png';
