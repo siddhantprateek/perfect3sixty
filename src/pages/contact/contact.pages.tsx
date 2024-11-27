@@ -22,6 +22,7 @@ const ContactUs: React.FC = () => {
               <h3 className="font-semibold text-gray-900">Our Address</h3>
               <p className="text-gray-600 text-sm">Perfect3sixty Office</p>
               <p className="text-gray-600 text-sm">Biju Nagar, Jharsuguda, Odisha</p>
+              <p className="text-gray-600 text-sm">Bhadrauli, Bhadroli, Agra, Uttar Pradesh</p>
             </div>
           </div>
 

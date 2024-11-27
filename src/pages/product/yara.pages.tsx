@@ -101,7 +101,7 @@ const YaraProduct: React.FC = () => {
   const initializeChat = async (userProfile: UserProfile): Promise<void> => {
 
     try {
-      const response = await fetch("/api/chat/initialize", {
+      const response = await fetch(`/api/chat/initialize`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

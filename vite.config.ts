@@ -6,15 +6,15 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), 
     },
   },
   server: {
     proxy: {
       '/api': {
-        target: 'https://agent.perfect3sixty.com',
+        target: 'https://agent.perfect3sixty.com/api',
         changeOrigin: true,
-        secure: true,
+        secure: false,
       }
     }
   }
